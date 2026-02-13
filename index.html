@@ -1,42 +1,155 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <title>채팅방 규칙</title>
-  <style>
-    body {
-      background: #0f172a;
-      color: #e5e7eb;
-      font-family: system-ui, sans-serif;
-      margin: 0;
-      padding: 20px;
-    }
-    .box {
-      max-width: 700px;
-      margin: auto;
-      background: #020617;
-      padding: 30px;
-      border-radius: 12px;
-    }
-    h1 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .rule {
-      margin-bottom: 12px;
-      line-height: 1.6;
-    }
-  </style>
-</head>
-<body>
-  <div class="box">
-    <h1>📌 채팅방 규칙</h1>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>비밀의 아이프리 게임방 규칙</title>
 
-    <div class="rule">1. 욕설, 비하, 공격적인 언행 금지</div>
-    <div class="rule">2. 정치·혐오·분쟁 유발 주제 금지</div>
-    <div class="rule">3. 불쾌감을 주는 행동 삼가</div>
-    <div class="rule">4. 관리자 판단에 따라 제재 가능</div>
-    <div class="rule">5. 규칙은 예고 없이 변경될 수 있음</div>
-  </div>
+<style>
+body{
+  margin:0;
+  background:#0f0f14;
+  color:#eee;
+  font-family:-apple-system, BlinkMacSystemFont, "Noto Sans KR", sans-serif;
+}
+.container{
+  max-width:720px;
+  margin:auto;
+  padding:20px;
+}
+header{
+  text-align:center;
+  margin-bottom:20px;
+}
+header h1{
+  margin:0;
+}
+.subtitle{
+  font-size:14px;
+  color:#aaa;
+}
+section, details{
+  background:#1a1a22;
+  padding:15px;
+  border-radius:10px;
+  margin-bottom:15px;
+}
+h2{
+  margin-top:0;
+  font-size:18px;
+}
+ul{
+  padding-left:18px;
+  line-height:1.6;
+}
+.notice{
+  border-left:4px solid #ffcc00;
+}
+.danger{
+  border-left:4px solid #ff5555;
+}
+details summary{
+  cursor:pointer;
+  font-weight:bold;
+}
+.confirm{
+  text-align:center;
+  background:#222233;
+}
+.keyword{
+  font-size:22px;
+  font-weight:bold;
+  color:#ffd966;
+}
+footer{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  margin-top:20px;
+}
+footer a{
+  background:#2a2a3a;
+  color:#8ab4ff;
+  text-decoration:none;
+  padding:12px;
+  border-radius:8px;
+  text-align:center;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<header>
+  <h1>🎮 비밀의 아이프리 게임방</h1>
+  <p class="subtitle">다 같이 지켜서 즐거운 분위기 만들어가요!</p>
+</header>
+
+<section class="notice">
+  <h2>⚠ 필독 공지</h2>
+  <ul>
+    <li>공지 확인 문구가 있습니다.</li>
+    <li>규칙을 안 읽고 받은 피해는 책임지지 않습니다.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>📌 들어오면 해야 할 것</h2>
+  <ul>
+    <li>입장 후 옾프로 변경 (20분 제한)</li>
+    <li>멘션 후 1시간 내 답장 없을 시 강퇴</li>
+  </ul>
+</section>
+
+<details>
+  <summary>📜 기본 규칙</summary>
+  <ul>
+    <li>도배 금지 (임티 3개↑ / 같은 말 3회↑)</li>
+    <li>야짤·혐짤 금지</li>
+    <li>패드립 / 섹드립 금지</li>
+    <li>친목 금지 (아는 얘기는 갠톡)</li>
+    <li>혐캐 언급 금지</li>
+  </ul>
+</details>
+
+<details>
+  <summary>🚫 경고 & 강퇴</summary>
+  <ul>
+    <li>규칙 위반 시 1회 기회</li>
+    <li>경고 10회 누적 시 강퇴</li>
+    <li>강퇴 후 1주일 뒤 해제</li>
+  </ul>
+</details>
+
+<details>
+  <summary>🎨 합작 / 거래 / 랭작</summary>
+  <ul>
+    <li>합작 수위 15금 고정</li>
+    <li>프리티시리즈만 거래 가능</li>
+    <li>랭작 중 실수로 싸우지 말기</li>
+  </ul>
+</details>
+
+<section class="danger">
+  <h2>🔥 반장 발작 버튼</h2>
+  <ul>
+    <li>프리파라 때가 좋았는데</li>
+    <li>라라가 주인공이었을 때가 좋았어</li>
+    <li>타 시리즈 비하 발언 전부 금지</li>
+  </ul>
+</section>
+
+<section class="confirm">
+  <h2>✅ 공지 확인 문구</h2>
+  <p class="keyword">분모자 먹고싶다</p>
+</section>
+
+<footer>
+  <a href="https://open.kakao.com/o/ges9BeEh" target="_blank">💬 오픈채팅 바로가기</a>
+  <a href="https://discord.gg/gUE39QkmFN" target="_blank">🎧 디스코드</a>
+</footer>
+
+</div>
 </body>
 </html>
